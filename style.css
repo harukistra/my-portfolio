@@ -1,6 +1,9 @@
 html {
   font-family: serif;
   background-color: rgb(17, 14, 14);
+  /* background-image: url("me2.jpg"); */
+  width: 100%;
+  opacity: 1;
 }
 
 #header {
@@ -22,11 +25,12 @@ html {
 
 #me {
   width: 100%;
-  opacity: 0.4;
-  position: inherit;
+  opacity: 0.3;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 
 #line {
@@ -69,4 +73,13 @@ html {
 
 .sub:hover {
   transform: scale(1.2, 1.2);
+}
+
+#article {
+  z-index: 100;
+  opacity: 1;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 10%;
 }
